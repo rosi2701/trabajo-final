@@ -10,7 +10,7 @@ Diseñar y desarrollar un portafolio digital que, mediante la exposición de mis
 
 lol lmao xd (usuarios en proceso)
 
-<img src="https://cdn.memegenerator.es/imagenes/memes/full/31/15/31159498.jpg" alt="Homero Simpson Meme" width="400">
+<img src="https://cdn.memegenerator.es/imagenes/memes/full/3/36/3367862.jpg" width="400">
 
 ---
 ## 3. Antecedentes
@@ -121,4 +121,4 @@ Aspectos negativos:
 
 lol lmao xd (moodboard en proceso)
 
-<img src="https://cdn.memegenerator.es/imagenes/memes/full/31/15/31159498.jpg" alt="Homero Simpson Meme" width="400">
+<img src="https://cdn.memegenerator.es/imagenes/memes/full/3/36/3367862.jpg" width="400">
