@@ -8,13 +8,37 @@ Diseñar y desarrollar un portafolio digital que, mediante la exposición de mis
 
 ## 2. ¿Para quiénes es esta propuesta? 
 
-lol lmao xd (usuarios en proceso)
+### Usuario promedio - Paola, 29 años
 
-<img src="https://cdn.memegenerator.es/imagenes/memes/full/3/36/3367862.jpg" width="400">
+Demografía: Directora de Innovación en una consultora de diseño estratégico. Formación en Diseño Integral con especialización en gestión de proyectos. Trabaja con clientes de diversos sectores.
+
+Comportamientos y creencias: Valora los portafolios visualmente atractivos, pero prioriza aquellos que evidencian claramente el proceso de diseño, la metodología aplicada y los resultados tangibles. Cree que un buen diseñador debe poder articular el "porqué" detrás de cada decisión.
+
+Necesidades y objetivos: Busca diseñadores integrales para integrar equipos multidisciplinarios. Necesita evidencias de creatividad, pensamiento crítico y una sólida capacidad de ejecución que demuestre un recorrido completo, desde la conceptualización e investigación hasta la entrega de un resultado final de alta calidad.
+
+
+
+### Usuario extremo 1 - Javier, 37 años
+
+Demografía: Gerente de Marketing en una empresa de retail familiar que busca modernizar su imagen. Su formación es en Administración y tiene un enfoque pragmático y orientado a resultados.
+
+Comportamientos y creencias: Valora portafolios que muestren versatilidad estilística y, sobre todo, resultados concretos y cuantificables. Se guía por casos de éxito anteriores.
+
+Necesidades y objetivos: Busca un diseñador capaz de manejar de manera integral un proceso de rediseño para su empresa, abarcando desde la identidad visual y el packaging hasta la experiencia en puntos de venta. Su objetivo es encontrar un profesional que traduzca sus necesidades de negocio en soluciones de diseño efectivas.
+
+
+
+### Usuario extremo 2 - Manuela, 56 años
+
+Demografía: Ingeniera, directora de una PYME de fabricación de componentes industriales. Con una larga trayectoria en el sector, es escéptica ante enfoques de diseño que no consideren la viabilidad productiva.
+
+Comportamientos y creencias: Valora portafolios que muestren un fuerte enfoque en el diseño industrial, con un buen manejo de la ergonomía, la funcionalidad y la factibilidad de fabricación. Prioriza la sustancia técnica sobre la forma.
+
+Necesidades y objetivos: Busca diseñadores industriales con dominio avanzado de programas de modelado 3D y conocimientos técnicos profundos sobre procesos industriales y materiales. Su objetivo es contratar a alguien que diseñe productos optimizados para su producción en serie.
+
 
 ---
 ## 3. Antecedentes
----
 
 ### 1. Sou a Joana
 
