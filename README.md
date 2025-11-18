@@ -143,7 +143,7 @@ Aspectos negativos:
 ---
 ## 4. Referentes
 
-lol lmao xd (moodboard en proceso)
+(ahora si yipii)
 
 ![Super moodboard yeiii](https://github.com/rosi2701/trabajo-final/blob/main/img_yesyes/moodboarmuikul.png?raw=true)
 
