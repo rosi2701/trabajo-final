@@ -145,4 +145,5 @@ Aspectos negativos:
 
 lol lmao xd (moodboard en proceso)
 
-<img src="https://cdn.memegenerator.es/imagenes/memes/full/3/36/3367862.jpg" width="400">
+![Super moodboard yeiii](https://github.com/rosi2701/trabajo-final/blob/main/img_yesyes/moodboarmuikul.png?raw=true)
+
