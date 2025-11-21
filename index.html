@@ -2,11 +2,155 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sitio web en construcción</title>
+    <title>Portafolio de Diseño</title>
+    
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Hola mundo!</h1>
+    <header>
+      <div class="logo">PORTAFOLIO</div>
+      <nav>
+        <ul>
+          <li><a href="#inicio">INICIO</a></li>
+          <li><a href="#proyectos">PROYECTOS</a></li>
+          <li><a href="#sobre-mi">SOBRE MÍ</a></li>
+          <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+      <div class="grid-bg"></div>
+      <div class="hero-content">
+        <h1>DISEÑADOR</h1>
+        <p class="subtitle">PRODUCTO · INDUSTRIAL · CONCEPTUAL</p>
+        <button class="cta-button" onclick="document.querySelector('#proyectos').scrollIntoView({behavior: 'smooth'})">VER PROYECTOS</button>
+      </div>
+    </section>
+
+    <section id="proyectos" class="projects">
+      <h2 class="section-title">PROYECTOS DESTACADOS</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image"></div>
+          <div class="project-info">
+            <div class="project-number">(01)</div>
+            <h3 class="project-title">Nombre del Proyecto</h3>
+            <p class="project-description">Descripción breve del proyecto. Aquí puedes explicar el concepto, el proceso y los resultados obtenidos.</p>
+            <div class="project-tags">
+              <span class="tag">3D</span>
+              <span class="tag">PRODUCTO</span>
+              <span class="tag">CONCEPTO</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image"></div>
+          <div class="project-info">
+            <div class="project-number">(02)</div>
+            <h3 class="project-title">Otro Proyecto</h3>
+            <p class="project-description">Descripción breve del proyecto. Aquí puedes explicar el concepto, el proceso y los resultados obtenidos.</p>
+            <div class="project-tags">
+              <span class="tag">SKETCH</span>
+              <span class="tag">DISEÑO</span>
+              <span class="tag">PROTOTIPO</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image"></div>
+          <div class="project-info">
+            <div class="project-number">(03)</div>
+            <h3 class="project-title">Tercer Proyecto</h3>
+            <p class="project-description">Descripción breve del proyecto. Aquí puedes explicar el concepto, el proceso y los resultados obtenidos.</p>
+            <div class="project-tags">
+              <span class="tag">ILUSTRACIÓN</span>
+              <span class="tag">CONCEPTO</span>
+              <span class="tag">ARTE</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image"></div>
+          <div class="project-info">
+            <div class="project-number">(04)</div>
+            <h3 class="project-title">Cuarto Proyecto</h3>
+            <p class="project-description">Descripción breve del proyecto. Aquí puedes explicar el concepto, el proceso y los resultados obtenidos.</p>
+            <div class="project-tags">
+              <span class="tag">MODELADO</span>
+              <span class="tag">RENDER</span>
+              <span class="tag">PRODUCTO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="project-modal" id="projectModal">
+      <button class="modal-close" onclick="closeProject()">✕</button>
+      <div class="modal-content" id="modalContent">
+        </div>
+    </div>
+
+    <section id="sobre-mi" class="about">
+      <div class="about-image"></div>
+      <div class="about-content">
+        <h2>SOBRE MÍ</h2>
+        <p>Soy un diseñador apasionado por crear productos innovadores y funcionales. Mi enfoque combina la estética conceptual con la practicidad del diseño industrial.</p>
+        <p>Me especializo en el desarrollo de conceptos desde el sketch inicial hasta el prototipo final, utilizando herramientas tradicionales y digitales.</p>
+        
+        <div class="skills">
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>SKETCHING</span>
+              <span>95%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 95%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>MODELADO 3D</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>PROTOTIPADO</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <h2>TRABAJEMOS JUNTOS</h2>
+      <p>¿Tienes un proyecto en mente? Me encantaría escucharlo.</p>
+      <div class="contact-links">
+        <a href="mailto:tu@email.com" class="contact-link">EMAIL</a>
+        <a href="#" class="contact-link">BEHANCE</a>
+        <a href="#" class="contact-link">INSTAGRAM</a>
+        <a href="#" class="contact-link">LINKEDIN</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 ROSARIO FUENTES CARRIZO. TODOS LOS DERECHOS RESERVADOS.</p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
