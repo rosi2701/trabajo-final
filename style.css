@@ -11,7 +11,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Header */
 header {
     position: fixed;
     top: 0;
@@ -54,7 +53,7 @@ nav a::after {
     left: 0;
     width: 0;
     height: 1px;
-    background: #ff6b4a;
+    background: #792828;
     transition: width 0.3s;
 }
 
@@ -62,7 +61,6 @@ nav a:hover::after {
     width: 100%;
 }
 
-/* Hero */
 .hero {
     height: 100vh;
     display: flex;
@@ -112,7 +110,7 @@ nav a:hover::after {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #ff6b4a;
+    background: #792828;
     transition: left 0.3s;
     z-index: -1;
 }
@@ -122,10 +120,9 @@ nav a:hover::after {
 }
 
 .cta-button:hover {
-    border-color: #ff6b4a;
+    border-color: #792828;
 }
 
-/* Grid Background */
 .grid-bg {
     position: absolute;
     top: 0;
@@ -139,7 +136,6 @@ nav a:hover::after {
     z-index: 1;
 }
 
-/* Projects Section */
 .projects {
     padding: 8rem 5%;
     background: #e8e6e3;
@@ -182,7 +178,6 @@ nav a:hover::after {
 }
 
 .project-image::after {
-    content: 'TU IMAGEN AQUÍ';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -198,7 +193,7 @@ nav a:hover::after {
 
 .project-number {
     font-size: 0.8rem;
-    color: #ff6b4a;
+    color: #792828;
     letter-spacing: 2px;
     margin-bottom: 0.5rem;
 }
@@ -230,7 +225,6 @@ nav a:hover::after {
     letter-spacing: 1px;
 }
 
-/* Project Modal */
 .project-modal {
     position: fixed;
     top: 0;
@@ -283,7 +277,7 @@ nav a:hover::after {
 }
 
 .modal-close:hover {
-    color: #ff6b4a;
+    color: #792828;
     transform: rotate(90deg);
 }
 
@@ -293,7 +287,7 @@ nav a:hover::after {
 
 .modal-number {
     font-size: 1rem;
-    color: #ff6b4a;
+    color: #792828;
     letter-spacing: 2px;
     margin-bottom: 1rem;
 }
@@ -341,7 +335,6 @@ nav a:hover::after {
 }
 
 .modal-image-container::after {
-    content: 'IMAGEN DEL PROYECTO';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -351,7 +344,6 @@ nav a:hover::after {
     letter-spacing: 2px;
 }
 
-/* About Section */
 .about {
     padding: 8rem 5%;
     background: #1a1d23;
@@ -418,11 +410,10 @@ nav a:hover::after {
 
 .skill-progress {
     height: 100%;
-    background: #ff6b4a;
+    background: #792828;
     transition: width 1s ease;
 }
 
-/* Contact Section */
 .contact {
     padding: 8rem 5%;
     background: #e8e6e3;
@@ -465,7 +456,6 @@ nav a:hover::after {
     color: #e8e6e3;
 }
 
-/* Footer */
 footer {
     padding: 3rem 5%;
     background: #1a1d23;
@@ -476,7 +466,6 @@ footer {
     letter-spacing: 1px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 3rem;
