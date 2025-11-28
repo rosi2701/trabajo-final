@@ -1,54 +1,110 @@
-// Project data - Aquí puedes agregar toda la información detallada de cada proyecto
 const projectsData = [
     {
         number: '01',
-        title: 'Nombre del Proyecto',
+        title: 'Festival del Cachureo',
         year: '2024',
-        client: 'Cliente / Personal',
-        role: 'Diseñador de Producto',
-        description: 'Esta es una descripción completa del proyecto. Aquí puedes explicar en detalle el concepto, el proceso de diseño, los desafíos enfrentados y las soluciones implementadas. Puedes agregar varios párrafos para contar la historia completa del proyecto.',
-        images: 3 // número de imágenes del proyecto
+        tipo: 'Académico',
+        modalidad: 'Grupal',
+        description: 'Este proyecto tiene como objetivo ser un espacio de ventas oficial de productos reutilizados y para los recicladores de base del programa "Reutiliza con Sentido" de la Municipalidad de Peñalolén. Proyecto desarrollado con el apoyo de Puentes UC.',
+        thumbnail: 'imagenes/festival1.png',
+        images: [
+            'imagenes/festival1.png',
+            'imagenes/festival2.png',
+            'imagenes/festival3.png',
+            'imagenes/festival4.png'
+        ]
     },
     {
         number: '02',
-        title: 'Otro Proyecto',
-        year: '2024',
-        client: 'Empresa XYZ',
-        role: 'Diseño Industrial',
-        description: 'Descripción completa del segundo proyecto con todos los detalles sobre el proceso creativo, investigación, desarrollo y resultado final.',
-        images: 4
+        title: 'Scape!',
+        year: '2025',
+        tipo: 'Académico',
+        modalidad: 'Grupal',
+        description: 'Proyecto desarrollado en conjunto con el Aeropuerto de Santiago como contraparte institucional. Consiste en la creación de una plataforma inteligente que utiliza recomendaciones locales para guiar a los turistas, conectando destinos de escape y facilitando el descubrimiento de los diversos atractivos de Chile.',
+        thumbnail: 'imagenes/scape1.png',
+        images: [
+            'imagenes/scape1.png',
+            'imagenes/scape2.png',
+            'imagenes/scape3.png',
+            'imagenes/scape4.png',
+            'imagenes/scape5.png'
+        ]
     },
     {
         number: '03',
-        title: 'Tercer Proyecto',
-        year: '2023',
-        client: 'Startup ABC',
-        role: 'Concept Design',
-        description: 'Información detallada sobre este proyecto de ilustración y concepto, incluyendo inspiraciones, técnicas utilizadas y el impacto del trabajo.',
-        images: 3
+        title: 'Batimóvil 1989',
+        year: '2025',
+        tipo: 'Académico',
+        modalidad: 'Individual',
+        description: 'Modelado 3D detallado del Batimóvil (película Batman, 1989), creado para demostrar dominio en técnicas avanzadas de Diseño por Computación.',
+        thumbnail: 'imagenes/batimovil1.png',
+        images: [
+            'imagenes/batimovil1.png',
+            'imagenes/batimovil2.png',
+            'imagenes/batimovil3.png',
+            'imagenes/batimovil4.png',
+            'imagenes/batimovil5.png'
+        ]
     },
     {
         number: '04',
-        title: 'Cuarto Proyecto',
+        title: 'Preventips',
+        year: '2025',
+        tipo: 'Académico',
+        modalidad: 'Grupal',
+        description: 'Diseño e implementación de un programa comunicacional digital y análogo enfocado en la sensibilización, preparación y prevención de riesgos en la comuna de San José de Maipo. La iniciativa fue desarrollada en colaboración activa con los vecinos y la Junta de Vecinos de San Alfonso.',
+        thumbnail: 'imagenes/preventips4.png',
+        images: [
+            'imagenes/preventips1.png',
+            'imagenes/preventips2.png',
+            'imagenes/preventips3.png'
+        ]
+    },
+    {
+        number: '05',
+        title: 'NgenPet',
+        year: '2025',
+        tipo: 'Académico',
+        modalidad: 'Individual',
+        description: 'Creación de una colección de souvenirs funcionales de protección para mascotas. El proyecto se basa en una profunda investigación de la cosmovisión mapuche y la riqueza biológica de la Reserva Huilo Huilo, logrando un diseño que fusiona la tradición cultural con el valor emocional del cuidado animal.',
+        thumbnail: 'imagenes/ngenpet1.png',
+        images: [
+            'imagenes/ngenpet1.png',
+            'imagenes/ngenpet2.png',
+            'imagenes/ngenpet3.png',
+            'imagenes/ngenpet4.png'
+        ]
+    },
+    {
+        number: '06',
+        title: 'Tocador PALADS',
         year: '2023',
-        client: 'Proyecto Personal',
-        role: 'Modelado 3D & Render',
-        description: 'Descripción extensa del cuarto proyecto con información sobre el software utilizado, el proceso de modelado y renderizado.',
-        images: 5
+        tipo: 'Académico',
+        modalidad: 'Individual',
+        description: 'Se realizó una reinterpretación conceptual profunda de una pieza de mobiliario existente. El resultado es una nueva pieza que sintetiza y evoluciona los rasgos distintivos y la esencia formal del diseño original.',
+        thumbnail: 'imagenes/palads1.png',
+        images: [
+            'imagenes/palads1.png',
+            'imagenes/palads2.png',
+            'imagenes/palads3.png',
+            'imagenes/palads4.png'
+        ]
     }
 ];
 
-// FUNCIÓN PARA ABRIR EL MODAL DE PROYECTO
 function openProject(index) {
     const project = projectsData[index];
     const modal = document.getElementById('projectModal');
     const modalContent = document.getElementById('modalContent');
     
-    // Generate images HTML
     let imagesHTML = '';
-    for(let i = 0; i < project.images; i++) {
-        imagesHTML += '<div class="modal-image-container"></div>';
-    }
+    project.images.forEach(imagePath => {
+        imagesHTML += `
+            <div class="modal-image-container">
+                <img src="${imagePath}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+        `;
+    });
     
     modalContent.innerHTML = `
         <div class="modal-header">
@@ -60,12 +116,12 @@ function openProject(index) {
                     <span>${project.year}</span>
                 </div>
                 <div class="modal-meta-item">
-                    CLIENTE
-                    <span>${project.client}</span>
+                    TIPO
+                    <span>${project.tipo}</span>
                 </div>
                 <div class="modal-meta-item">
-                    ROL
-                    <span>${project.role}</span>
+                    MODALIDAD
+                    <span>${project.modalidad}</span>
                 </div>
             </div>
         </div>
@@ -81,33 +137,27 @@ function openProject(index) {
     document.body.style.overflow = 'hidden';
 }
 
-// FUNCIÓN PARA CERRAR EL MODAL DE PROYECTO
 function closeProject() {
     const modal = document.getElementById('projectModal');
     modal.classList.remove('active');
     document.body.style.overflow = 'auto';
 }
 
-// CERRAR MODAL CON LA TECLA ESCAPE
 document.addEventListener('keydown', function(e) {
     if(e.key === 'Escape') {
         closeProject();
     }
 });
 
-// CERRAR MODAL AL HACER CLIC FUERA DEL CONTENIDO
 const projectModalElement = document.getElementById('projectModal');
 if (projectModalElement) {
     projectModalElement.addEventListener('click', function(e) {
-        // Verifica si el clic fue directamente en el fondo del modal (e.target === this)
         if(e.target === this) {
             closeProject();
         }
     });
 }
 
-
-// SMOOTH SCROLL (Desplazamiento suave)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -118,7 +168,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ANIMACIÓN DE BARRAS DE HABILIDAD (SKILL BARS) AL HACER SCROLL
 const observerOptions = {
     threshold: 0.5
 };
@@ -129,11 +178,27 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.querySelectorAll('.skill-progress').forEach(bar => {
                 bar.style.width = bar.parentElement.previousElementSibling.querySelector('span:last-child').textContent;
             });
-            // Opcional: deja de observar después de animar para no repetir
-            // observer.unobserve(entry.target); 
         }
     });
 }, observerOptions);
 
 const skillsSection = document.querySelector('.skills');
 if (skillsSection) observer.observe(skillsSection);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const projectCards = document.querySelectorAll('.project-card');
+
+    projectCards.forEach((card, index) => {
+        const projectImage = card.querySelector('.project-image');
+        if (projectImage && projectsData[index].thumbnail) {
+            projectImage.style.backgroundImage = `url('${projectsData[index].thumbnail}')`;
+            projectImage.style.backgroundSize = 'cover';
+            projectImage.style.backgroundPosition = 'center';
+            projectImage.innerHTML = '';
+        }
+        
+        card.addEventListener('click', () => {
+            openProject(index);
+        });
+    });
+});
