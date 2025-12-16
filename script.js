@@ -66,7 +66,7 @@ const projectsData = [
         year: '2025',
         tipo: 'Académico',
         modalidad: 'Individual',
-        description: 'Creación de una colección de souvenirs funcionales de protección para mascotas. El proyecto se basa en una profunda investigación de la cosmovisión mapuche y la riqueza biológica de la Reserva Huilo Huilo, logrando un diseño que fusiona la tradición cultural con el valor emocional del cuidado animal.',
+        description: 'Creación de una colección de souvenirs funcionales de protección para mascotas. El proyecto se basa en una profunda investigación de la cosmovisión mapuche y la riqueza biológica de la Reserva Huilo Huilo, logrando un diseño que fusiona la tradición cultural con el valor emocional del cuidado animal. El producto se realizó usando madera de roble reforzada y corte láser. Además, fue expuesto en el IV Encuentro de áreas protegidas en el Centro Cultural La Moneda.',
         thumbnail: 'imagenes/ngenpet1.png',
         images: [
             'imagenes/ngenpet1.png',
@@ -81,7 +81,7 @@ const projectsData = [
         year: '2023',
         tipo: 'Académico',
         modalidad: 'Individual',
-        description: 'Se realizó una reinterpretación conceptual profunda de una pieza de mobiliario existente. El resultado es una nueva pieza que sintetiza y evoluciona los rasgos distintivos y la esencia formal del diseño original.',
+        description: 'Tocador PALADS busca generar un ambiente vibrante, carismático y funcional, integrando formas geométricas que aportan vida a la habitación. Combina estética y practicidad, incorporando luces estratégicamente ubicadas para iluminar al usuario y facilitar actividades como peinarse o maquillarse. Estas luces cuentan con un interruptor ubicado al costado derecho de la mesa, pensado para un acceso cómodo y discreto.',
         thumbnail: 'imagenes/palads1.png',
         images: [
             'imagenes/palads1.png',
@@ -202,3 +202,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
