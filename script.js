@@ -52,12 +52,14 @@ const projectsData = [
         year: '2025',
         tipo: 'Académico',
         modalidad: 'Grupal',
-        description: 'Diseño e implementación de un programa comunicacional digital y análogo enfocado en la sensibilización, preparación y prevención de riesgos en la comuna de San José de Maipo. La iniciativa fue desarrollada en colaboración activa con los vecinos y la Junta de Vecinos de San Alfonso.',
+        description: 'Diseño e implementación de un programa comunicacional integral para la prevención de riesgos en San José de Maipo, desarrollado en colaboración con la Junta de Vecinos de San Alfonso. El proyecto se materializó a través de un sistema omnicanal: desde una estrategia digital con plantillas y posts para Instagram, hasta una activación en terreno. Esta última incluyó un stand educativo con entrega de material de utilidad inmediata (afiches e imanes de emergencia) y una herramienta de evaluación mediante un quiz de conocimientos preventivos, logrando cerrar la brecha entre la información digital y la participación comunitaria física.',
         thumbnail: 'imagenes/preventips4.png',
         images: [
-            'imagenes/preventips1.png',
+            'imagenes/preventipsafiches.png',
+            'imagenes/preventipsafiches2.png',
+            'imagenes/preventipsinstagram.png',
             'imagenes/preventips2.png',
-            'imagenes/preventips3.png'
+            'imagenes/preventips1.png'
         ]
     },
     {
@@ -202,4 +204,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 
